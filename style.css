@@ -1,0 +1,278 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            .header {
+                width: 100%;
+                min-height: 100vh;
+                background: url('https://media.istockphoto.com/photos/merging-business-with-the-online-world-picture-id598261008?b=1&k=20&m=598261008&s=170667a&w=0&h=p67mJTSlTsrAOXzel9t3VtKbBtEKeTt7P2ie5T6YNb4=');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+            }
+            
+            .navbar {
+                display: flex;
+                padding: 2% 3%;
+                justify-content: space-between;
+                align-items: center;
+                background: black;
+                opacity: 0.4;
+            }
+            
+            .nav-links {
+                flex: 1;
+                text-align: right;
+            }
+            
+            .navbar h2 {
+                color: white;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            
+            .nav-links ul li {
+                list-style: none;
+                display: inline-block;
+                padding: 5px 12px;
+                position: relative;
+            }
+            
+            .nav-links ul li a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            
+            .nav-links a:hover {
+                border: 1px solid white;
+                padding: 8px 8px;
+                box-shadow: 0 0 10px white;
+                color: #ff33ff;
+            }
+            
+            .text {
+                width: 90%;
+                color: red;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-80%, -50%);
+                padding: 5px 12px;
+                margin: 5px 4px;
+            }
+            
+            .text h2 {
+                color: rgba(1, 12, 47);
+            }
+            
+            .text h1 {
+                color: rgb(241, 25, 110);
+                font-weight: bold;
+                font-size: 40px;
+            }
+            
+            .text h3 {
+                color: blue;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            
+            .hero-btn {
+                border: 1px solid #ff33ff;
+                border-radius: 10px;
+                padding: 10px;
+                margin-top: 70px;
+                line-height: 5.34em;
+                ;
+            }
+            
+            .text a {
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                background-color: #ff33ff;
+                cursor: pointer;
+            }
+            
+            .hero-btn:hover {
+                border: 1px solid #ff33ff;
+                background-color: #ff33ff;
+                transition: 1s;
+            }
+            
+            .about {
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                padding-top: 70px;
+            }
+            
+            .education {
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                padding: 70px;
+            }
+            
+            .title {
+                text-align: center;
+                color: rgb(70, 51, 51);
+                font-weight: bold;
+                letter-spacing: 1px;
+                font-size: 40px;
+            }
+            
+            .row {
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            
+            .col {
+                flex-basis: 31%;
+                background-color: #fff3f3;
+                border-radius: 10px;
+                margin-bottom: 5%;
+                padding: 20px 12px;
+                box-sizing: border-box;
+                transition: 0.5s;
+            }
+            
+            .col:hover {
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+            }
+            
+            .skills {
+                width: 80%;
+                padding-top: 10px;
+                background-color: #fff3f3;
+                padding-bottom: 10%;
+            }
+            
+            .skills h1 {
+                padding-bottom: 50px;
+            }
+            
+            .skills li {
+                list-style: none;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            
+            .skills .percent {
+                width: 30%;
+                background: gray;
+                display: inline-block;
+                margin-left: 50%;
+                margin-right: 50%;
+                height: 10px;
+            }
+            
+            .skills .percent div {
+                top: 0;
+                left: 0;
+                height: 100%;
+                background-color: #03a9f4;
+            }
+            
+            .proto {
+                width: 80%;
+                padding-top: 100px;
+                margin-left: 100px;
+            }
+            
+            .row1 {
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            
+            .proto .title h2 {
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            
+            .col1 {
+                flex-basis: 31%;
+                background-color: #fff3f3;
+                border-radius: 10px;
+                margin-bottom: 5%;
+                padding: 20px 12px;
+                box-sizing: border-box;
+                transition: 0.5s;
+                text-align: center;
+            }
+            
+            .col1 p {
+                padding-left: 0;
+            }
+            
+            .col1 h3 {
+                margin-top: 16px;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            
+            .footer {
+                width: 80%;
+                position: relative;
+                margin: auto;
+                padding-top: 10px;
+                background: rgb(139, 139, 137);
+            }
+            
+            .footer h2 {
+                padding-top: 20px;
+                padding-bottom: 50px;
+            }
+            
+            .contact h1 {
+                font-weight: bold;
+                color: white;
+                letter-spacing: 1px;
+                font-size: 50px;
+                padding-bottom: 1%;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            
+            .contact ul {
+                position: relative;
+                padding-left: 10px;
+            }
+            
+            .contact ul li {
+                position: relative;
+                list-style: none;
+                margin: 5px 10px;
+                cursor: pointer;
+                font-size: 10px;
+                color: #fff;
+                padding-left: 10px;
+            }
+            
+            .contact ul li .icon {
+                display: inline-block;
+                width: 20px;
+                font-size: 20px;
+                color: #03a9f4;
+            }
+            
+            .contact ul li a {
+                text-decoration: none;
+                text-align: center;
+                color: #edf2f5;
+                font-weight: 600;
+                font-size: 20px;
+                padding-left: 10px;
+            }
