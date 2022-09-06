@@ -5,205 +5,207 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>protofolio</title>
+    <title>Personal Portofolio Website</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <script src="https://kit.fontawesome.com/76746a0aa0.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="./images/mlogo.jpg" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
 
-    <section class="header">
-        <nav class="navbar">
+                    <li><a href="#project">projects</a></li>
+                    <li><a href="#contact">contact Us</a></li>
+                    <!-- close icon-->
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <!-- menu for small screen-->
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
 
-            <h2>logo</h2>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#">Home</a>
-                    </li>
-                    <li><a href=" #c1">About Me</a>
-                    </li>
-                    <li><a href=" #c2">Education</a>
-                    </li>
-                    <li><a href="#c3 ">Skills</a>
-                    </li>
-                    <li><a href="#c4 ">Projects</a>
-                    </li>
-                    <li><a href="#c5 ">Contact Me</a>
-                    </li>
-
-
-
+                <h1>Hi, I'm<br><span> Manju Shree H T</span></h1>
+                <p>This is my official Portfolio website to showcase<br> my all works related to web development</p>
+                <a href="mailto:manjushreegowdatanu@gmail.com">Hire Me</a>
             </div>
-
-
-        </nav>
-        <div class="text">
-            <h2>Hi There</h2>
-            <h1> My Name Is Manju Shree </h1>
-            <h3>I Am A Front End Developer</h3>
-            <a class="hero-btn" href=" ">Hire Me</a>
         </div>
 
-    </section>
 
-    <!-- about us-->
-    <section class="about">
-        <h1 id="c1" class="title">About Me</h1>
-
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur commodi quam cum nisi animi tempora ab, ipsam hic vitae necessitatibus perferendis dolor autem eius aperiam illo nostrum minus libero incidunt!</p>
-
-    </section>
-    <!-- education-->
-    <section class="about education">
-        <div class="ed">
-            <h1 id="c2" class="title">Education:</h1>
+    </div>
+    <!-- about section-->
+    <div class="about" id="about">
+        <div class="container">
             <div class="row">
-                <div class="col">
-                    <h3>Post graduation</h3>
-                    <h2>Combinatin:MCA</h2>
-                    <h2>college:new horizon</h2>
-                    <h3>percentage:70%</h3>
+                <div class="about-col1">
+                    <img src="./images/aboutimg.avif" alt="image missing">
                 </div>
-                <div class="col">
-                    <h3>Post graduation</h3>
-                    <h2>Combinatin:MCA</h2>
-                    <h2>college:new horizon</h2>
-                    <h3>percentage:70%</h3>
-                </div>
-                <div class="col">
-                    <h3>Post graduation</h3>
-                    <h2>Combinatin:MCA</h2>
-                    <h2>college:new horizon</h2>
-                    <h3>percentage:70%</h3>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis suscipit fuga cumque animi soluta, libero voluptate amet exercitationem perspiciatis iure laborum eos voluptatum id cupiditate nulla itaque nihil quam tempore veritatis
+                        eaque officiis molestiae rerum voluptates. Libero, rem perferendis. Quam tempore excepturi sint, ratione accusantium veritatis nulla libero maiores!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+
+                            <li>HTML </li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>Sql</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li><span>-current</span><br>Student At Acciojob FullStact Web Devlepore </li>
+
+
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+
+                            <li><span>2018-2020</span><br>MCA from New Horizon College of Engineering </li>
+                            <li><span>2018-2020</span><br>BCA from VVPuram College Of Science </li>
+                            <li><span>2018-2020</span><br>12th from Chennambikka PU College </li>
+
+
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
-    </section>
 
-    <!---------skills ---------- -->
+    </div>
 
-    <section class="about skills">
-        <h1 id="c3" class="title">Skills</h1>
-        <li>
-            <span class="text1">Java</span>
-            <span class="percent">
-                <div style="width:80%;">  </div>
-            </span>
-        </li>
-        <li>
-            <span class="text1">Java</span>
-            <span class="percent">
-                <div style="width:80%;">  </div>
-            </span>
-        </li>
-        <li>
-            <span class="text1">Java</span>
-            <span class="percent">
-                <div style="width:80%;">  </div>
-            </span>
-        </li>
-        <li>
-            <span class="text1">Java</span>
-            <span class="percent">
-                <div style="width:80%;">  </div>
-            </span>
-        </li>
-        <li>
-            <span class="text1">Java</span>
-            <span class="percent">
-                <div style="width:80%;">  </div>
-            </span>
-        </li>
-    </section>
+    <!-- projects -->
+    <div class="project" id="project">
+        <div class="container">
+            <h1 class="sub-title med">My Projects</h1>
+            <div class="row">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./images/resturant.jpg" alt="restrurant"></div>
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nobis magni tempora asperiores dicta in quo repudiandae hic dolorem cum!</p>
+                </div>
 
-    <!-- protofolio---------------------------------->
-    <section class="proto">
-        <h2 id="c4" class="title">Protofolio</h2>
-        <div class="row1">
-            <div class="col1">
-                <img src="background.jpg " alt="missing">
-                <h1>resume protofolio</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam quas, optio est quod perferendis voluptate pariatur perspiciatis totam cumque.</p>
 
-            </div>
-            <div class="col1">
-                <img src="background.jpg " alt="missing">
-                <h1>resume protofolio</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam quas, optio est quod perferendis voluptate pariatur perspiciatis totam cumque.</p>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./images/flower.jpg" alt="flower"></div>
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nobis magni tempora asperiores dicta in quo repudiandae hic dolorem cum!</p>
+                </div>
 
-            </div>
-            <div class="col1">
-                <img src="background.jpg " alt="missing">
-                <h1>resume protofolio</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam quas, optio est quod perferendis voluptate pariatur perspiciatis totam cumque.</p>
 
-            </div>
-            <div class="col1">
-                <img src="background.jpg " alt="missing">
-                <h1>resume protofolio</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam quas, optio est quod perferendis voluptate pariatur perspiciatis totam cumque.</p>
-
-            </div>
-            <div class="col1">
-                <img src="background.jpg " alt="missing">
-                <h1>resume protofolio</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam quas, optio est quod perferendis voluptate pariatur perspiciatis totam cumque.</p>
-
-            </div>
-            <div class="col1">
-                <img src="background.jpg" alt="missing">
-                <h1>resume protofolio</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora laboriosam quas, optio est quod perferendis voluptate pariatur perspiciatis totam cumque.</p>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./images/todo.avif" alt="todoApp"></div>
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nobis magni tempora asperiores dicta in quo repudiandae hic dolorem cum!</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./images/todo.avif" alt="todoApp"></div>
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nobis magni tempora asperiores dicta in quo repudiandae hic dolorem cum!</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./images/todo.avif" alt="todoApp"></div>
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nobis magni tempora asperiores dicta in quo repudiandae hic dolorem cum!</p>
+                </div>
 
             </div>
         </div>
 
-    </section>
-    <!-- contact Me-->
-    <section class=" about 
-    footer">
-        <h2 id="c5" class="title"> Contact Me</h2>
-        <div class="contact">
-            <h1>Manju Shree</h1>
-            <ul>
-                <li>
-                    <span class="icon"> <i class="fa fa-phone" aria-hidden="true"></i> </span>
-                    <span class="text2"><a href="tel:76764766508">+91 654567889</a>
-                </span>
+    </div>
 
-                </li>
-                <li>
-                    <span class="icon"> <i class="fa fa-envelope-open" aria-hidden="true"></i> </span>
-                    <span class="text2"><a href="mailto:manjushreegowdatanu@gmail.com">manju@gmail.com</a>
-                </span>
+    <!-- contact page-->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> contact@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>8976509723</p>
+                    <div class="icons">
+                        <a href="">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-github"></i> </a>
+                    </div>
+                    <!-- attach file-->
+                    <a href=".images/resume.pdef" download class="btn ">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
 
-                </li>
-                <li>
-                    <span class="icon"> <i class="fa fa-github" aria-hidden="true"></i> </span>
-                    <span class="text2"><a href="">Linkdin</a>
-                </span>
-
-                </li>
-                <li>
-                    <span class="icon"> <i class="fa fa-linkedin" aria-hidden="true"></i> </span>
-                    <span class="text2"><a href="tel:76764766508">github</a>
-                </span>
-
-                </li>
-                <li>
-                    <span class="icon"> <i class="fa fa-map-marker" aria-hidden="true"></i> </span>
-                    <span class="text2"><a href="tel:76764766508">github</a>
-                </span>
-
-                </li>
-            </ul>
-
+                    </form>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="copyright">
+            <p>Copyright @ Manju 2022</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
 </body>
 
 </html>
